@@ -1,0 +1,72 @@
+/* CSS RESET */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============ GLOBAL ============ */
+body {
+    background-color: #fff;
+    height: 100vh;
+    font-family: 'Prompt', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    overflow: hidden;
+}
+
+
+/* ============ HEADER ============ */
+header {
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+}
+
+header img {
+    width: 30%;
+}
+
+nav {
+    background-color: #daecff;
+}
+
+.navbar-brand {
+    width: 30%;
+}
+
+
+.home-title {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    max-width: 30%;
+}
+
+
+/* ============ RESERVATIONS ============ */
+.reservation {
+
+}
+
+.btn-reservation {
+    text-align: center;
+}
+
+/* ============ VOYAGES ============ */
+
+
+
+/* ============ AGENCE ============ */
+
+
+
+/* ============ CONTACT ============ */
+
+
+
+/* ============ FOOTER ============ */

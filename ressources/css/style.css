@@ -19,8 +19,33 @@ p {
     overflow: hidden;
 }
 
+h2,
 h3 {
     text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    width: 100%;
+    margin: 20px;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #072ac8;
+    width: 200px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .btn {
@@ -64,6 +89,10 @@ nav {
     max-width: 79%;
 }
 
+.navbar-brand {
+    width: 20%;
+}
+
 
 /* ============ RESERVATIONS ============ */
 .reservation {
@@ -88,8 +117,6 @@ nav {
     text-align: center;
 }
 
-
-
 .pack-content span {
     position: absolute;
     top: 30px;
@@ -103,6 +130,12 @@ nav {
     border-radius: 10px;
     border: 1px solid #daecff;
     background-color: #daecff;
+    box-shadow: 5px 5px 2.5px rgb(235, 235, 235);
+    transition: transform .4s;
+}
+
+.card-travel:hover {
+    transform: scale(1.1);
 }
 
 .pack-content {
@@ -148,8 +181,95 @@ nav {
     border: none;
 }
 
+
 /* ============ AVIS CLIENTS ============ */
+.clients {
+    margin: 50px 0 50px 0;
+}
+
+.clients h5 {
+    color: white;
+}
+
+.clients h5:after {
+    background-color: #fff;
+}
+
+.client-profil {
+    color: white;
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.checked {
+    color: orange;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+
 
 /* ============ NEWSLETTER ============ */
+.newsletter {
+    margin: 20px;
+}
+
+.btn-newsletter {
+    width: 100%;
+}
+
+.newsletter-info {
+    font-style: italic;
+}
 
 /* ============ FOOTER ============ */
+footer {
+    background-color: rgb(54, 54, 54);
+    color: #fff;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 20px 0 0;
+}
+
+.copyright a {
+    color: #fff;
+}
+
+.social i {
+    margin: 5px 5px 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.social a {
+    color: #fff;
+}
+
+#fb:hover {
+    color: #3b5999;
+}
+
+/* #insta:hover {
+    color: #e4405f;
+} */
+
+#twitter:hover {
+    color: #55acee;
+}
+
+#git:hover {
+    color: #111010;
+}

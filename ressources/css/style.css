@@ -1,5 +1,7 @@
 /* CSS RESET */
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,6 +17,21 @@ body {
 
 p {
     overflow: hidden;
+}
+
+.btn {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    color: #072ac8;
+    border: 1px solid  #072ac8;
+    transition: 1s;
+}
+
+.btn:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #072ac8;
 }
 
 
@@ -33,10 +50,11 @@ header img {
 
 nav {
     background-color: #daecff;
+    height: 8vh;
 }
 
 .navbar-brand {
-    width: 30%;
+    /* width: 30%; */
 }
 
 
@@ -44,29 +62,56 @@ nav {
     position: absolute;
     top: 40%;
     left: 20%;
-    max-width: 30%;
+    max-width: 79%;
 }
 
 
 /* ============ RESERVATIONS ============ */
 .reservation {
-
+    margin: 20px;
 }
 
 .btn-reservation {
     text-align: center;
+    width: 100%;
 }
 
 /* ============ VOYAGES ============ */
+.best-travels {
+    margin: 20px;
+}
 
+.pack-title {
+    padding: 5px;
+}
 
+.pack-title h3 {
+    text-align: center;
+}
 
-/* ============ AGENCE ============ */
+.pack-content img {
+    width: 100%;
+    height: 300px;
+    border-radius : 0 0 10px 10px;
+}
 
+.pack-content span {
+    position: absolute;
+    top: 130px;
+    right: 15.5px;
+    background-color: #daecff;
+    font-weight: 700;
+    padding: 2px;
+}
 
+.card-travel {
+    border-radius: 10px;
+    border: 1px solid #daecff;
+    background-color:  #daecff;
+}
 
-/* ============ CONTACT ============ */
+/* ============ AVIS CLIENTS ============ */
 
-
+/* ============ NEWSLETTER ============ */
 
 /* ============ FOOTER ============ */

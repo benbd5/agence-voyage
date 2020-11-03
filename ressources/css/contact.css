@@ -1,0 +1,25 @@
+/* ============ HEADER ============ */
+.contact-header {
+    background-image: url(../images/contact-header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    max-width: 100%;
+}
+
+
+/* ============ FORM CONTACT ============ */
+.contact {
+    margin: 50px;
+}
+
+#contact-mail, #contact-name, #contact-prenom {
+    margin-top: 16px;
+}
+
+.btn-contact {
+    width: 100%;
+    text-align: center;
+}

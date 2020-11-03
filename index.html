@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
@@ -20,12 +20,12 @@
 </head>
 
 <body>
-    <header>
+    <header class="index-header">
 
         <!-- =============== NAVBAR ===============  -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-                <a href="#" class="navbar-brand"><img src="./ressources/images/Logo-bureau-svg.svg" alt="Logo" /></a>
+                <a href="./index.html" class="navbar-brand"><img src="./ressources/images/logo.png" alt="Logo" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu"
                     aria-controls="#monMenu" aria-label="Menu pour mobile">
                     <span class="navbar-toggler-icon"></span>
@@ -33,8 +33,9 @@
 
                 <div class="collapse navbar-collapse" id="monMenu">
                     <div class="navbar-nav ml-auto">
+                        <a href="./index.html" class="nav-item nav-link">Accueil</a>
                         <a href="#reservation" class="nav-item nav-link">Réservations</a>
-                        <a href="#travels" class="nav-item nav-link">Les voyages proposés</a>
+                        <a href="./recherche.html" class="nav-item nav-link">Les voyages proposés</a>
                         <a href="./agence.html" class="nav-item nav-link">L'agence</a>
                         <a href="#newsletter" class="nav-item nav-link">Newsletter</a>
                         <a href="./contact.html" class="nav-item nav-link" id="contact">Contact</a>
@@ -48,11 +49,12 @@
             <div class="row">
                 <div class="col-md-12 home-title">
                     <h1>Voyagez</h1>
-                    <span>Partout dans monde</span>
+                    <span>Dans le monde entier</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </div>
+
         <!-- =============== RESERVATIONS =============== -->
         <span id="reservation"></span>
         <section class="reservation">
@@ -110,27 +112,19 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-md-4">
-                        <div class="form-group col-md-12">
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio1">Avion</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Train</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio3">Bateau</label>
-                            </div>
-                        </div>
+                        <select class="custom-select">
+                            <option selected>Mode de transport</option>
+                            <option value="1">Avion</option>
+                            <option value="2">Train</option>
+                            <option value="3">Bateau</option>
+                        </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="start">Date de départ</label>
+                        <label for="start">Départ</label>
                         <input type="date" name="trip-start" value="today" min="today">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="start">Date d'arrivée</label>
+                        <label for="start">Arrivée</label>
                         <input type="date" name="trip-start" value="today" min="today">
                     </div>
                 </div>
@@ -141,17 +135,15 @@
                         </button>
                     </div>
                 </div>
+            </div>
         </section>
     </header>
-
-
-
 
 
     <!-- =============== LES MEILLEURS VOYAGES PROPOSES =============== -->
     <span id="travels"></span>
     <br>
-    <section class="best-travels" >
+    <section class="best-travels">
         <div class="container">
             <div class="row">
                 <h2>Les voyages les plus réservés</h2>
@@ -210,6 +202,11 @@
                     </div>
                 </div>
             </div>
+
+        </div>
+        <div class="row d-flex justify-content-end">
+            <a href="./recherche.html" class="see-more">Voir tous les voyages proposés <i
+                    class="fas fa-arrow-circle-right"></i></a>
         </div>
     </section>
 
@@ -231,7 +228,7 @@
                 <div class="carousel-item active">
                     <img src="./ressources/images/ny-cody.jpg" class="d-block w-100" alt="...">
 
-                    <!-- ! à voir pour le responsive : d-none à ajouter comme sur le 2 et le 3 du carousel -->
+                    <!-- TODO : à voir pour le responsive : d-none à ajouter comme sur le 2 et le 3 du carousel -->
                     <div class="carousel-caption d-md-block">
                         <cite><img src="./ressources/images/cody.jpg" alt="camila photo">Cody Ford</cite>
                         <h5>New York - 25/10/2020</h5>
@@ -278,6 +275,12 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+            <div class="container">
+                <div class="row d-flex justify-content-end">
+                    <a href="./recherche.html" class="see-more">Voir plus d'avis <i
+                            class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -329,16 +332,20 @@
                     </div>
                 </div>
             </div>
+            <div class="row d-flex justify-content-end">
+                <a href="./blog.html" class="see-more">Voir les articles du blog <i
+                        class="fas fa-arrow-circle-right"></i></a>
+            </div>
         </div>
         <section class="ftco-section-parallax">
             <div class="parallax-img d-flex align-items-center">
-                <div class="container">
+                <div class="container" id="form-newsletter">
                     <div class="form-group row d-flex justify-content-center">
                         <div class="col-md-7 text-center">
                             <h4 class="newsletter-title">Abonnez-vous à notre newsletter</h4>
                             <p class="newsletter-info">Vous recevrez des offres exclusives, des bons plans et des
                                 réductions !</p>
-                            <div class="row d-flex justify-content-center mt-5" id="test">
+                            <div class="row d-flex justify-content-center mt-5" id="newsletter-input">
                                 <div class="col-md-8">
                                     <form class="form-group d-flex">
                                         <input type="email" class="form-control" id="colFormLabel"
@@ -368,7 +375,6 @@
     </footer>
 
 </body>
-
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

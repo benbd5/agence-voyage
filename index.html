@@ -21,6 +21,8 @@
 
 <body>
     <header>
+
+        <!-- =============== NAVBAR ===============  -->
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div class="container">
                 <a href="#" class="navbar-brand"><img src="./ressources/images/Logo-bureau-svg.svg" alt="Logo" /></a>
@@ -32,118 +34,124 @@
                 <div class="collapse navbar-collapse" id="monMenu">
                     <div class="navbar-nav ml-auto">
                         <a href="#reservation" class="nav-item nav-link">Réservations</a>
-                        <a href="#voyages" class="nav-item nav-link">Les voyages proposés</a>
+                        <a href="#travels" class="nav-item nav-link">Les voyages proposés</a>
                         <a href="./agence.html" class="nav-item nav-link">L'agence</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="#newsletter" class="nav-item nav-link">Newsletter</a>
+                        <a href="./contact.html" class="nav-item nav-link" id="contact">Contact</a>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <!-- =============== TITLE =============== -->
         <div class="container">
             <div class="row">
                 <div class="col-md-12 home-title">
-                    <h1>Voyage</h1>
-                    <h1>Partout dans monde</h1>
+                    <h1>Voyagez</h1>
+                    <span>Partout dans monde</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </div>
-
+        <!-- =============== RESERVATIONS =============== -->
+        <span id="reservation"></span>
+        <section class="reservation">
+            <div class="container">
+                <div class="row">
+                    <h2>Réservations</h2>
+                    <hr>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <select class="custom-select">
+                            <option selected>Choisissez votre lieu de départ</option>
+                            <optgroup label="France">
+                                <option value="1">Paris</option>
+                                <option value="2">Marseille</option>
+                                <option value="3">Bordeaux</option>
+                                <option value="3">Strasbourg</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <select class="custom-select">
+                            <option selected>Choisissez votre lieu d'arrivée</option>
+                            <optgroup label="Australie">
+                                <option value="1">Melbourne</option>
+                                <option value="2">Sydney</option>
+                                <option value="3">Perth</option>
+                                <option value="3">Brisbane</option>
+                            </optgroup>
+                            <optgroup label="France">
+                                <option value="1">Paris</option>
+                                <option value="2">Marseille</option>
+                                <option value="3">Bordeaux</option>
+                                <option value="3">Strasbourg</option>
+                            </optgroup>
+                            <optgroup label="Etats-Unis">
+                                <option value="1">New-York</option>
+                                <option value="2">Las Vegas</option>
+                                <option value="3">Los Angeles</option>
+                                <option value="3">Chicago</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <select class="custom-select">
+                            <option selected>Tranche de prix</option>
+                            <optgroup label="France">
+                                <option value="1">>200€</option>
+                                <option value="2">>500€</option>
+                                <option value="3">>1000€</option>
+                                <option value="3">>2000€</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <div class="form-group col-md-12">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">Avion</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Train</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio3">Bateau</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="start">Date de départ</label>
+                        <input type="date" name="trip-start" value="today" min="today">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="start">Date d'arrivée</label>
+                        <input type="date" name="trip-start" value="today" min="today">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <button class="btn btn-reservation">
+                            Rechercher
+                        </button>
+                    </div>
+                </div>
+        </section>
     </header>
 
 
-    <!-- =============== RESERVATIONS =============== -->
-    <section id="reservation" class="reservation">
-        <div class="container">
-            <div class="row">
-                <h2>Réservations</h2>
-                <hr>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <select class="custom-select">
-                        <option selected>Choisissez votre lieu de départ</option>
-                        <optgroup label="France">
-                            <option value="1">Paris</option>
-                            <option value="2">Marseille</option>
-                            <option value="3">Bordeaux</option>
-                            <option value="3">Strasbourg</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div class="form-group col-md-4">
-                    <select class="custom-select">
-                        <option selected>Choisissez votre lieu d'arrivée</option>
-                        <optgroup label="Australie">
-                            <option value="1">Melbourne</option>
-                            <option value="2">Sydney</option>
-                            <option value="3">Perth</option>
-                            <option value="3">Brisbane</option>
-                        </optgroup>
-                        <optgroup label="France">
-                            <option value="1">Paris</option>
-                            <option value="2">Marseille</option>
-                            <option value="3">Bordeaux</option>
-                            <option value="3">Strasbourg</option>
-                        </optgroup>
-                        <optgroup label="Etats-Unis">
-                            <option value="1">New-York</option>
-                            <option value="2">Las Vegas</option>
-                            <option value="3">Los Angeles</option>
-                            <option value="3">Chicago</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div class="form-group col-md-4">
-                    <select class="custom-select">
-                        <option selected>Tranche de prix</option>
-                        <optgroup label="France">
-                            <option value="1">>200€</option>
-                            <option value="2">>500€</option>
-                            <option value="3">>1000€</option>
-                            <option value="3">>2000€</option>
-                        </optgroup>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-4">
-                    <div class="form-group col-md-12">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio1">Avion</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">Train</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio3">Bateau</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="start">Date de départ</label>
-                    <input type="date" name="trip-start" value="today" min="today">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="start">Date d'arrivée</label>
-                    <input type="date" name="trip-start" value="today" min="today">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-12">
-                    <button class="btn btn-reservation">
-                        Rechercher
-                    </button>
-                </div>
-            </div>
-    </section>
+
 
 
     <!-- =============== LES MEILLEURS VOYAGES PROPOSES =============== -->
-    <section class="best-travels">
+    <span id="travels"></span>
+    <br>
+    <section class="best-travels" >
         <div class="container">
             <div class="row">
                 <h2>Les voyages les plus réservés</h2>
@@ -275,6 +283,10 @@
 
 
     <!-- =============== BLOG / ARTICLES DE LA NEWSLETTER =============== -->
+    <span id="newsletter">
+        <br> <!-- br permet de sauter une ligne pour que le scroll de la navbar se cale au dessus du titre -->
+    </span>
+    <br>
     <article class="newsletter">
         <div class="container">
             <div class="row">
@@ -320,13 +332,13 @@
         </div>
         <section class="ftco-section-parallax">
             <div class="parallax-img d-flex align-items-center">
-                <div class="container" id="newsletter">
+                <div class="container">
                     <div class="form-group row d-flex justify-content-center">
                         <div class="col-md-7 text-center">
                             <h4 class="newsletter-title">Abonnez-vous à notre newsletter</h4>
                             <p class="newsletter-info">Vous recevrez des offres exclusives, des bons plans et des
                                 réductions !</p>
-                            <div class="row d-flex justify-content-center mt-5">
+                            <div class="row d-flex justify-content-center mt-5" id="test">
                                 <div class="col-md-8">
                                     <form class="form-group d-flex">
                                         <input type="email" class="form-control" id="colFormLabel"

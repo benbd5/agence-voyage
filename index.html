@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div class="container">
                 <a href="#" class="navbar-brand"><img src="./ressources/images/Logo-bureau-svg.svg" alt="Logo" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu"
@@ -226,8 +226,7 @@
                     <!-- ! à voir pour le responsive : d-none à ajouter comme sur le 2 et le 3 du carousel -->
                     <div class="carousel-caption d-md-block">
                         <cite><img src="./ressources/images/cody.jpg" alt="camila photo">Cody Ford</cite>
-                        <h5>New York - Cody Ford</h5>
-                        <h6>25/10/2020</h6>
+                        <h5>New York - 25/10/2020</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -240,8 +239,7 @@
                     <img src="./ressources/images/paris-zack.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <cite><img src="./ressources/images/zack.jpg" alt="camila photo">Zack Perez</cite>
-                        <h5>Paris - Zack Perez</h5>
-                        <h6>02/08/2020</h6>
+                        <h5>Paris - 02/08/2020</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -254,8 +252,7 @@
                     <img src="./ressources/images/sydney-camila.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <cite><img src="./ressources/images/camila.jpg" alt="camila photo">Camila Mcdonalid</cite>
-                        <h5>Sydney - Camila Mcdonalid</h5>
-                        <h6>15/01/2020</h6>
+                        <h5>Sydney - 15/01/2020</h5>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -320,17 +317,29 @@
                     </div>
                 </div>
             </div>
-            <div class="form-group row">
-                <div class="col-md-5">
-                    <p class="newsletter-info">Abonnez-vous à notre newsletter pour recevoir des offres exclusives !</p>
-                </div>
-                <div class="col-md-5">
-                    <input type="email" class="form-control" id="colFormLabel" placeholder="example@contact.com">
-                </div>
-                <div class="col-md-2">
-                    <button type="submit" class="btn btn-newsletter">Souscrire</button>
+        </div>
+        <section class="ftco-section-parallax">
+            <div class="parallax-img d-flex align-items-center">
+                <div class="container" id="newsletter">
+                    <div class="form-group row d-flex justify-content-center">
+                        <div class="col-md-7 text-center">
+                            <h4 class="newsletter-title">Abonnez-vous à notre newsletter</h4>
+                            <p class="newsletter-info">Vous recevrez des offres exclusives, des bons plans et des
+                                réductions !</p>
+                            <div class="row d-flex justify-content-center mt-5">
+                                <div class="col-md-8">
+                                    <form class="form-group d-flex">
+                                        <input type="email" class="form-control" id="colFormLabel"
+                                            placeholder="example@contact.com">
+                                        <button type="submit" class="btn-newsletter">Souscrire</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
     </article>
 
     <!-- =============== FOOTER ===============  -->

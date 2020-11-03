@@ -41,7 +41,7 @@ a {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #072ac8;
+    background-color: #2ebdc4;
     width: 200px;
     content: "";
     margin: 0 auto;
@@ -52,15 +52,15 @@ h2:after {
     text-align: center;
     text-transform: uppercase;
     background-color: white;
-    color: #072ac8;
-    border: 1px solid #072ac8;
+    color: #2ebdc4;
+    border: 1px solid#2ebdc4;
     transition: 1s;
 }
 
 .btn:hover {
     border: 1px solid #fff;
     color: #fff;
-    background-color: #072ac8;
+    background-color: #2ebdc4;
 }
 
 
@@ -78,8 +78,7 @@ header img {
 }
 
 nav {
-    background-color: #daecff;
-    height: 8vh;
+    /* background-color: #daecff; */
 }
 
 .home-title {
@@ -127,6 +126,7 @@ nav {
 }
 
 .card-travel {
+    margin-bottom: 25px;
     border-radius: 10px;
     border: 1px solid #daecff;
     background-color: #daecff;
@@ -220,16 +220,77 @@ cite img {
 
 
 /* ============ NEWSLETTER ============ */
-.newsletter {
-    margin: 20px;
-}
-
 .btn-newsletter {
     width: 100%;
+    padding: 1px 16px;
+    border-left: none;
+    color: #fff;
+    font-weight: 650;
+    transition: 1s;
+}
+
+/* background: linear-gradient(135deg, #2ebdc4 0%, #68e5b2 100%); */
+.btn-newsletter:hover {
+    background-color: #fff;
+    color: #2ebdc4;
+}
+
+.newsletter-title {
+    font-size: 40px;
+    color: #fff;
 }
 
 .newsletter-info {
     font-style: italic;
+    color: #fff;
+}
+
+.ftco-section-parallax {
+    position: relative;
+}
+
+.ftco-section {
+    padding: 6em 0;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.ftco-section-parallax .parallax-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    padding: 10em 0;
+    background: linear-gradient(135deg, #2ebdc4 0%, #68e5b2 100%);
+}
+
+.subscribe-form .form-group {
+    position: relative;
+    margin-bottom: 0;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 0;
+}
+
+.form-control {
+    background: transparent !important;
+    border: 1px solid white;
+    border-radius: 0;
+    height: 52px !important;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.subscribe-form .form-group input, button {
+    background: transparent;
+    border: 1px solid white;
+    /* color: rgba(255, 255, 255, 0.7) !important; */
+    font-size: 16px;
 }
 
 /* ============ FOOTER ============ */
@@ -273,3 +334,4 @@ footer {
 #git:hover {
     color: #111010;
 }
+

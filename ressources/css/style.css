@@ -136,7 +136,7 @@ header img {
     background-color: #2ebdc4;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     #connexion {
         margin-left: -8px;
     }
@@ -161,6 +161,22 @@ header img {
     text-align: center;
     width: 100%;
 }
+
+#datepicker:hover, #datepicker1:hover {
+    cursor: pointer;
+}
+
+.fa-calendar-alt {
+    position: absolute;
+    margin-left: -32px;
+    margin-top: 3px;
+    z-index: 9999;
+    color: rgb(131, 131, 131);
+    background-color: white;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
 
 /* ============ VOYAGES ============ */
 .best-travels {
@@ -277,6 +293,22 @@ cite img {
     margin-top: 0;
 }
 
+@media screen and (max-width: 576px) {
+
+    .carousel-item cite img {
+        display: none;
+    }
+
+    .carousel-caption {
+        /* width: 50%; */
+        height: 50%;
+        margin-bottom: 100px;
+    }
+
+    .carousel-caption p {
+        margin-bottom: 0;
+    }
+}
 
 
 /* ============ NEWSLETTER ============ */

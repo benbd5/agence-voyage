@@ -122,6 +122,26 @@ header img {
     max-width: 100%;
 }
 
+#connexion {
+    border-radius: 50px;
+    border: 1px solid #2ebdc4;
+    padding: 8px;
+    max-height: 42px;
+    max-width: 100px;
+    transition: 1s;
+}
+
+#connexion:hover {
+    color: #fff;
+    background-color: #2ebdc4;
+}
+
+@media screen and (max-width: 992px) {
+    #connexion {
+        margin-left: -8px;
+    }
+}
+
 /* ============ RESERVATIONS ============ */
 .reservation {
     position: absolute;

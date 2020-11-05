@@ -10,6 +10,64 @@
 } */
 
 
+/* PRINCIPAL SEARCH */
+.search-advanced .container {
+    border-radius: 10px;
+    /* border: 1px solid #fff; */
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 5px rgb(235, 235, 235);
+}
+
+
+/* SEARCH FILTER LEFT */
+.card-header i, h6{
+    color: black;
+}
+
+/* .section-content aside {
+    position: sticky;
+} */
+
+
+/* BUTTON CHECBKOX */
+.btn-checkbox {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    color: #2ebdc4;
+    border: 1px solid#2ebdc4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    font-size: 12px;
+}
+
+.checkbox-btn .btn  {
+    position: relative;
+}
+
+.checkbox-btn .btn  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="checkbox"].test5 {
+    display: none;
+  }
+
+input[type="checkbox"].test5 + label {
+    background-color: #fff;
+}
+
+input[type="checkbox"].test5:checked + label {
+    background-color: #2ebdc4;
+    color: #fff;
+}
+
+
+
 .search-advanced {
     margin-top: 150px;
     margin-bottom: 25px;
@@ -32,13 +90,8 @@
     line-height: 1.5;
 }
 
-.checkbox-btn {
-    position: relative;
-}
 
-.checkbox-btn input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
+/* HORAIRES */
+.nav-tabs {
+    border-bottom: none; /* permet d'enlever la bordure par défaut de bootstrap */
 }
-

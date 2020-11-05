@@ -57,7 +57,7 @@ h2:after {
     margin-top: 10px;
 }
 
-.btn {
+.btn-hover  {
     text-align: center;
     text-transform: uppercase;
     background-color: white;
@@ -68,13 +68,13 @@ h2:after {
     transition: 0.4s;
 }
 
-.btn:hover {
+.btn-hover:hover {
     /* border: 1px solid #fff; */
     color: #fff;
     background-color: #2ebdc4;
 }
 
-.btn:active{
+.btn-hover:active{
     transform: scale(1.05);
 }
 
@@ -184,7 +184,7 @@ header img {
     position: absolute;
     margin-left: -32px;
     margin-top: 3px;
-    z-index: 9999;
+    z-index: 1;
     color: rgb(131, 131, 131);
     background-color: white;
     font-size: xx-large;

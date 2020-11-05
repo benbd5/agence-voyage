@@ -50,7 +50,6 @@
 
     <section class="search-advanced">
         <div class="container">
-            <div class="container">
                 <div class="row d-flex justify-content-center">
                     <h2>Recherches avancées</h2>
                     <hr>
@@ -90,7 +89,7 @@
                             </optgroup>
                         </select>
                     </div>
-                    <div class="form-group col-md-4">
+                    <!-- <div class="form-group col-md-4">
                         <select class="custom-select">
                             <option selected>Tranche de prix</option>
                             <option value="1">Moins de 200€</option>
@@ -99,9 +98,7 @@
                             <option value="3">Entre 1 000€ et 2 000€</option>
                             <option value="3">Plus de 2 000€</option>
                         </select>
-                    </div>
-                </div>
-                <div class="form-row">
+                    </div> -->
                     <div class="form-group col-md-4">
                         <select class="custom-select">
                             <option selected>Mode de transport</option>
@@ -109,6 +106,12 @@
                             <option value="2">Train</option>
                             <option value="3">Bateau</option>
                         </select>
+                    </div>
+                </div>
+                <!-- Seconde ligne -->
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input class="form-control" placeholder="Prix maximum" type="number">
                     </div>
                     <div class="form-group col-md-4">
                         <input type="text" id="datepicker" placeholder="Date de départ" class="custom-select">
@@ -121,16 +124,16 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <button class="btn btn-reservation">
+                        <button class="btn btn-hover  btn-reservation">
                             Rechercher
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
+    <!-- =============== SEARCH FILTER LEFT ===============  -->
     <section class="section-content padding-y">
         <div class="container">
 
@@ -143,204 +146,345 @@
                                 <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false"
                                     class="collapsed">
                                     <i class="icon-control fa fa-chevron-down"></i>
-                                    <h6 class="title">Product type</h6>
+                                    <h6 class="title">Bagages</h6>
                                 </a>
                             </header>
                             <div class="filter-content collapse" id="collapse_1">
                                 <div class="card-body">
-                                    <form class="pb-3">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Search">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-light" type="button"><i
-                                                        class="fa fa-search"></i></button>
-                                            </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label>Bagages à main</label>
+                                            <input class="form-control" placeholder="0" type="number">
                                         </div>
-                                    </form>
-
-                                    <ul class="list-menu">
-                                        <li><a href="#">People </a></li>
-                                        <li><a href="#">Watches </a></li>
-                                        <li><a href="#">Cinema </a></li>
-                                        <li><a href="#">Clothes </a></li>
-                                        <li><a href="#">Home items </a></li>
-                                        <li><a href="#">Animals</a></li>
-                                        <li><a href="#">People </a></li>
-                                    </ul>
-
-                                </div> <!-- card-body.// -->
+                                        <div class="form-group col-md-12">
+                                            <label>Bagages en soute</label>
+                                            <input class="form-control" placeholder="0" type="number">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </article> <!-- filter-group  .// -->
+                        </article>
 
                         <article class="filter-group">
                             <header class="card-header">
                                 <a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="false"
                                     class="collapsed">
                                     <i class="icon-control fa fa-chevron-down"></i>
-                                    <h6 class="title">Brands </h6>
+                                    <h6 class="title">Horaires</h6>
                                 </a>
                             </header>
                             <div class="filter-content collapse" id="collapse_2">
                                 <div class="card-body">
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" checked="" class="custom-control-input">
-                                        <div class="custom-control-label">Mercedes
-                                            <b class="badge badge-pill badge-light float-right">120</b> </div>
-                                    </label>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" checked="" class="custom-control-input">
-                                        <div class="custom-control-label">Toyota
-                                            <b class="badge badge-pill badge-light float-right">15</b> </div>
-                                    </label>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" checked="" class="custom-control-input">
-                                        <div class="custom-control-label">Mitsubishi
-                                            <b class="badge badge-pill badge-light float-right">35</b> </div>
-                                    </label>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" checked="" class="custom-control-input">
-                                        <div class="custom-control-label">Nissan
-                                            <b class="badge badge-pill badge-light float-right">89</b> </div>
-                                    </label>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <div class="custom-control-label">Honda
-                                            <b class="badge badge-pill badge-light float-right">30</b> </div>
-                                    </label>
-                                </div> <!-- card-body.// -->
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-start"
+                                            role="tab" aria-controls="nav-home" aria-selected="true">Départ</a>
+                                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-arrival"
+                                            role="tab" aria-controls="nav-profile" aria-selected="false">Arrivée</a>
+                                    </div>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-start" role="tabpanel"
+                                            aria-labelledby="nav-home-tab">
+                                            <input class="form-control" placeholder="00:00" type="time">
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-arrival" role="tabpanel"
+                                            aria-labelledby="nav-profile-tab">
+                                            <input class="form-control" placeholder="23:59" type="time">
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                        </article> <!-- filter-group .// -->
+                        </article>
 
                         <article class="filter-group">
                             <header class="card-header">
                                 <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="false"
                                     class="collapsed">
                                     <i class="icon-control fa fa-chevron-down"></i>
-                                    <h6 class="title">Price range </h6>
+                                    <h6 class="title">Compagnies aériennes</h6>
                                 </a>
                             </header>
                             <div class="filter-content collapse" id="collapse_3">
                                 <div class="card-body">
-                                    <input type="range" class="custom-range" min="0" max="100" name="">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Air France
+                                            <b class="badge badge-pill badge-light float-right">120</b> </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Qatar Airways
+                                            <b class="badge badge-pill badge-light float-right">110</b> </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">American Airlines
+                                            <b class="badge badge-pill badge-light float-right">35</b> </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Volotea
+                                            <b class="badge badge-pill badge-light float-right">89</b> </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <div class="custom-control-label">Ryanair
+                                            <b class="badge badge-pill badge-light float-right">30</b> </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="filter-group">
+                            <header class="card-header">
+                                <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false"
+                                    class="collapsed">
+                                    <i class="icon-control fa fa-chevron-down"></i>
+                                    <h6 class="title">Prix</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse" id="collapse_4">
+                                <div class="card-body">
+                                    <input type="range" class="custom-range" min="0" max="3000" name="">
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label>Min</label>
-                                            <input class="form-control" placeholder="$0" type="number">
+                                            <input class="form-control" placeholder="0€" type="number">
                                         </div>
                                         <div class="form-group text-right col-md-6">
                                             <label>Max</label>
-                                            <input class="form-control" placeholder="$1,0000" type="number">
+                                            <input class="form-control" placeholder="1000€" type="number">
                                         </div>
-                                    </div> <!-- form-row.// -->
-                                    <button class="btn btn-block btn-primary">Apply</button>
-                                </div><!-- card-body.// -->
-                            </div>
-                        </article> <!-- filter-group .// -->
-
-                        <article class="filter-group">
-                            <header class="card-header">
-                                <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true"
-                                    class="">
-                                    <i class="icon-control fa fa-chevron-down"></i>
-                                    <h6 class="title">Sizes </h6>
-                                </a>
-                            </header>
-                            <div class="filter-content collapse show" id="collapse_4">
-                                <div class="card-body">
-                                    <label class="checkbox-btn">
-                                        <input type="checkbox">
-                                        <span class="btn btn-light"> XS </span>
-                                    </label>
-
-                                    <label class="checkbox-btn">
-                                        <input type="checkbox">
-                                        <span class="btn btn-light"> SM </span>
-                                    </label>
-
-                                    <label class="checkbox-btn">
-                                        <input type="checkbox">
-                                        <span class="btn btn-light"> LG </span>
-                                    </label>
-
-                                    <div>
-                                        <input type="checkbox" id="toggle">
-                                        <label for="toggle">test</label>
                                     </div>
-
-                                    <div class="btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-secondary active">
-                                          <input type="checkbox" checked autocomplete="off"> Checked
-                                        </label>
-                                      </div>
-
-                                    <label class="checkbox-btn">
-                                        <input type="checkbox">
-                                        <span class="btn btn-light"> XXL </span>
-                                    </label>
-                                </div><!-- card-body.// -->
+                                    <button class="btn btn-hover  btn-block btn-primary">Appliquer</button>
+                                </div>
                             </div>
-                        </article> <!-- filter-group .// -->
-                        
+                        </article>
+
                         <article class="filter-group">
                             <header class="card-header">
                                 <a href="#" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false"
-                                    class="">
+                                    class="collapsed">
                                     <i class="icon-control fa fa-chevron-down"></i>
-                                    <h6 class="title">More filter </h6>
+                                    <h6 class="title">Classe </h6>
                                 </a>
                             </header>
-                            <div class="filter-content collapse in" id="collapse_5">
+                            <div class="filter-content collapse show" id="collapse_5">
                                 <div class="card-body">
-                                    <label class="custom-control custom-radio">
-                                        <input type="radio" name="myfilter_radio" checked=""
-                                            class="custom-control-input">
-                                        <div class="custom-control-label">Any condition</div>
-                                    </label>
+                                    <div class="btn">
+                                        <input type="checkbox" id="toggle1" class="test5">
+                                        <label for="toggle1" class="btn-checkbox">Economique</label>
+                                    </div>
 
-                                    <label class="custom-control custom-radio">
-                                        <input type="radio" name="myfilter_radio" class="custom-control-input">
-                                        <div class="custom-control-label">Brand new </div>
-                                    </label>
+                                    <div class="btn">
+                                        <input type="checkbox" id="toggle2" class="test5">
+                                        <label for="toggle2" class="btn-checkbox">Affaire</label>
+                                    </div>
 
-                                    <label class="custom-control custom-radio">
-                                        <input type="radio" name="myfilter_radio" class="custom-control-input">
-                                        <div class="custom-control-label">Used items</div>
-                                    </label>
+                                    <div class="btn">
+                                        <input type="checkbox" id="toggle4" class="test5">
+                                        <label for="toggle4" class="btn-checkbox">Premium</label>
+                                    </div>
 
-                                    <label class="custom-control custom-radio">
-                                        <input type="radio" name="myfilter_radio" class="custom-control-input">
-                                        <div class="custom-control-label">Very old</div>
-                                    </label>
-                                </div><!-- card-body.// -->
+                                </div>
                             </div>
-                        </article> <!-- filter-group .// -->
-                    </div> <!-- card.// -->
-                </aside> <!-- col.// -->
+                        </article>
+                    </div>
+                </aside>
 
                 <main class="col-md-9">
 
                     <header class="border-bottom mb-4 pb-3">
                         <div class="form-inline">
-                            <span class="mr-md-auto">32 Items found </span>
+                            <span class="mr-md-auto">18 voyages trouvés </span>
                             <select class="mr-2 form-control">
-                                <option>Latest items</option>
-                                <option>Trending</option>
-                                <option>Most Popular</option>
-                                <option>Cheapest</option>
+                                <option>Les plus réservés</option>
+                                <option>Nouveaux voyages</option>
+                                <option>Prix : croissant</option>
+                                <option>Prix : décroissant</option>
                             </select>
                             <div class="btn-group">
-                                <a href="#" class="btn btn" data-toggle="tooltip" title=""
+                                <a href="#" class="btn btn-hover  btn" data-toggle="tooltip" title=""
                                     data-original-title="List view">
-                                    <i class="fa fa-bars"></i></a>
-                                <a href="#" class="btn  btn active" data-toggle="tooltip" title=""
+                                    <i class="fas fa-th-list"></i></a>
+                                <a href="#" class="btn btn-hover   btn btn-hover  active" data-toggle="tooltip" title=""
                                     data-original-title="Grid view">
-                                    <i class="fa fa-th"></i></a>
+                                    <i class="fas fa-th"></i></a>
                             </div>
                         </div>
-                    </header><!-- sect-heading -->
+                    </header>
+
+                    <section class="search-travels">
+                        <div class="container">
+
+                            <!-- ======== ROW 1 ========  -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card-travel">
+                                        <div class="pack-title">
+                                            <h3>Sydney</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="pack-content">
+                                            <img src="./ressources/images/sydney.jpg" alt="photo Sydney" class="image">
+                                            <span>2 500€</span>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <button class="btn btn-hover ">Réserver</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-travel">
+                                        <div class="pack-title">
+                                            <h3>Paris</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="pack-content">
+                                            <img src="./ressources/images/paris.jpg" alt="photo Paris" class="image">
+                                            <span>500€</span>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <button class="btn btn-hover ">Réserver</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-travel">
+                                        <div class="pack-title">
+                                            <h3>New York</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="pack-content">
+                                            <img src="./ressources/images/ny.jpg" alt="photo New York" class="image">
+                                            <span>2 000€</span>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <button class="btn btn-hover ">Réserver</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ======== ROW 2 ========  -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card-travel">
+                                        <div class="pack-title">
+                                            <h3>Londres</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="pack-content">
+                                            <img src="./ressources/images/advanced-search/london.jpg" alt="photo Sydney" class="image">
+                                            <span>600€</span>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <button class="btn btn-hover ">Réserver</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-travel">
+                                        <div class="pack-title">
+                                            <h3>Barcelone</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="pack-content">
+                                            <img src="./ressources/images/advanced-search/barcelona.jpg" alt="photo Paris" class="image">
+                                            <span>350€</span>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <button class="btn btn-hover ">Réserver</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-travel">
+                                        <div class="pack-title">
+                                            <h3>Lisbonne</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="pack-content">
+                                            <img src="./ressources/images/advanced-search/lisbon.jpg" alt="photo New York" class="image">
+                                            <span>400€</span>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <button class="btn btn-hover ">Réserver</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ======== ROW 3 ========  -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card-travel">
+                                        <div class="pack-title">
+                                            <h3>Bangkok</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="pack-content">
+                                            <img src="./ressources/images/advanced-search/bangkok.jpg" alt="photo Sydney" class="image">
+                                            <span>2 500€</span>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <button class="btn btn-hover ">Réserver</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-travel">
+                                        <div class="pack-title">
+                                            <h3>Bali</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="pack-content">
+                                            <img src="./ressources/images/advanced-search/bali.jpg" alt="photo Paris" class="image">
+                                            <span>3 000€</span>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <button class="btn btn-hover ">Réserver</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-travel">
+                                        <div class="pack-title">
+                                            <h3>Rio de Janeiro</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="pack-content">
+                                            <img src="./ressources/images/advanced-search/rio.jpg" alt="photo Rio" class="image">
+                                            <span>2 000€</span>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <button class="btn btn-hover ">Réserver</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
                 </main>
             </div>
-        </div> <!-- container .//  -->
+        </div>
     </section>
 
 

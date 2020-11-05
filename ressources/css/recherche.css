@@ -95,3 +95,9 @@ input[type="checkbox"].test5:checked + label {
 .nav-tabs {
     border-bottom: none; /* permet d'enlever la bordure par défaut de bootstrap */
 }
+
+
+/* ======== CARDS ======== */
+.pack-title {
+    overflow-wrap: break-word;
+}

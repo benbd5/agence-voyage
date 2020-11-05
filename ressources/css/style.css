@@ -233,7 +233,6 @@ header img {
 }
 
 .image {
-    height: 300px;
     border-radius: 0 0 10px 10px;
     opacity: 1;
     display: block;

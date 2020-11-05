@@ -16,6 +16,12 @@
     height: 200px;
 }
 
+@media screen and (max-width: 500px) {
+    .agence {
+        margin-bottom: 100px;
+    }
+}
+
 .agence-info {
     font-style: italic;
     text-align: center;

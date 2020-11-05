@@ -67,7 +67,7 @@
         <section class="reservation">
             <div class="container">
                 <div class="row d-flex justify-content-center">
-                    <h2>Réservations</h2>
+                    <h2>Recherches</h2>
                     <hr>
                 </div>
                 <div class="form-row">
@@ -108,11 +108,11 @@
                     <div class="form-group col-md-4">
                         <select class="custom-select">
                             <option selected>Tranche de prix</option>
-                                <option value="1">Moins de 200€</option>
-                                <option value="2">Entre 200€ et 500€</option>
-                                <option value="3">Entre 500€ et 1 000€</option>
-                                <option value="3">Entre 1 000€ et 2 000€</option>
-                                <option value="3">Plus de 2 000€</option>
+                            <option value="1">Moins de 200€</option>
+                            <option value="2">Entre 200€ et 500€</option>
+                            <option value="3">Entre 500€ et 1 000€</option>
+                            <option value="3">Entre 1 000€ et 2 000€</option>
+                            <option value="3">Plus de 2 000€</option>
                         </select>
                     </div>
                 </div>
@@ -235,8 +235,6 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./ressources/images/ny-cody.jpg" class="d-block w-100" alt="...">
-
-                    <!-- TODO : à voir pour le responsive : d-none à enlever comme sur le 2 et le 3 du carousel -->
                     <div class="carousel-caption d-md-block">
                         <cite><img src="./ressources/images/cody.jpg" alt="camila photo">Cody Ford</cite>
                         <h5>New York - 25/10/2020</h5>
@@ -384,7 +382,7 @@
 
 </body>
 
-    <!-- =============== BOOTSTRAP =============== -->
+<!-- =============== BOOTSTRAP =============== -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 </script>
@@ -392,12 +390,16 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
 </script>
 
-    <!-- =============== PIKADAY =============== -->
+<!-- =============== PIKADAY =============== -->
 <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
 <script src="pikaday.js"></script>
 <script>
-    var picker = new Pikaday({ field: document.getElementById('datepicker') });
-    var picker = new Pikaday({ field: document.getElementById('datepicker1') });
+    var picker = new Pikaday({
+        field: document.getElementById('datepicker')
+    });
+    var picker = new Pikaday({
+        field: document.getElementById('datepicker1')
+    });
 </script>
 
 </html>

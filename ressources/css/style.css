@@ -63,7 +63,9 @@ h2:after {
     background-color: white;
     color: #2ebdc4;
     border: 1px solid#2ebdc4;
-    transition: 1s;
+    /* outline: black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s;
 }
 
 .btn:hover {
@@ -71,6 +73,14 @@ h2:after {
     color: #fff;
     background-color: #2ebdc4;
 }
+
+.btn:active{
+    transform: scale(1.05);
+}
+
+/* .btn:focus {
+    outline : black;
+} */
 
 .see-more {
     margin-top: 10px;
@@ -128,12 +138,16 @@ header img {
     padding: 8px;
     max-height: 42px;
     max-width: 100px;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 #connexion:hover {
     color: #fff;
     background-color: #2ebdc4;
+}
+
+#connexion:active{
+    transform: scale(1);
 }
 
 @media screen and (max-width: 1200px) {

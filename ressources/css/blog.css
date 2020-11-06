@@ -1,0 +1,72 @@
+/* ========= BLOG HEADER ========= */
+.form-inline select {
+    margin: 7px 0 7px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .btn-group-toggle {
+        display: none;
+    }
+}
+
+.blog-filter {
+    margin: 0 7px 0 7px;
+}
+
+
+
+/* ========= BLOG ========= */
+.blog {
+    margin-top: 100px;
+}
+
+.blog .card {
+    margin-bottom: 25px;
+}
+
+
+.card-img {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+  
+.card-title-blog {
+    margin-bottom: 0.3rem;
+}
+  
+.cat {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+  
+.fa-users {
+    margin-left: 1rem;
+}
+
+.fa-heart {
+    color: red;
+}
+  
+.stats i{
+    margin-left: 4px;
+}
+
+.card-body a .btn-info {
+    cursor: pointer;
+}
+
+.card-footer {
+    font-size: 0.8rem;
+}
+
+.btn-light {
+    position: absolute;
+    margin: 20px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .blog .container .row {
+        display: flex;
+        justify-content: center;
+    }
+}

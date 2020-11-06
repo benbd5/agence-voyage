@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
     <link rel="stylesheet" href="./ressources/css/style.css" />
+    <link rel="stylesheet" href="./ressources/css/blog.css">
     <title>Agence de voyage</title>
 </head>
 
@@ -47,7 +48,159 @@
     </header>
 
 
+    <section class="blog">
+        <div class="container">
+            <main class="col-md-12">
 
+                <!-- ========= LES FILTRES ========= -->
+
+                <!-- TODO : https://www.w3schools.com/howto/howto_js_list_grid_view.asp 
+                Pour afficher en grille ou en ligne avec plus de détails -->
+                <header class="border-bottom mb-4 pb-3">
+                    <div class="form-inline">
+                        <span class="mr-md-auto">4 articles </span>
+
+                        <!-- <div class="blog-filter">
+                            <input type="checkbox" id="filter-voyage">
+                            <label for="filter-voyage">Voyage</label>
+                        </div>
+                        <div class="blog-filter">
+                            <input type="checkbox" id="filter-voyage">
+                            <label for="filter-voyage">Voyage</label>
+                        </div> -->
+
+                        <select class="mr-2 form-control">
+                            <option>Nouveaux articles</option>
+                            <option>Les plus lus</option>
+                            <option>Date : croissante</option>
+                            <option>Date : décroissante</option>
+                        </select>
+                        <div class="btn-group btn-group-toggle">
+                            <a href="#" class="btn btn-hover" data-toggle="button" title=""
+                                data-original-title="List view">
+                                <i class="fas fa-th-list"></i></a>
+                            <a href="#" class="btn btn-hover active" data-toggle="button" title=""
+                                data-original-title="Grid view">
+                                <i class="fas fa-th"></i></a>
+
+                                <!-- https://getbootstrap.com/docs/4.0/components/buttons/
+                                 https://www.w3schools.com/howto/howto_js_list_grid_view.asp
+                               https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_list_grid_view
+                            -->
+
+                        </div>
+                    </div>
+                </header>
+
+                <div class="row ">
+                    <!-- ========= LES ARTICLES ========= -->
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img" src="./ressources/images/ny.jpg" alt="ny">
+                            <a href="#" class="btn btn-light btn-sm">Voyage</a>
+                            <div class="card-body">
+                                <h4 class="card-title-blog">Titre</h4>
+                                <small class="text-muted cat">
+                                    <i class="far fa-clock text-info"></i> ~ 2 minutes de lecture
+                                </small>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maxime consequuntur, voluptatem voluptas aliquam debitis.</p>
+                                <a href="#" class="btn btn-info">Lire</a>
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                                <div class="views">Oct 20, 12:45PM</div>
+                                <div class="stats">
+                                    <i class="far fa-eye"></i> 1347
+                                    <i class="far fa-comment"></i> 12
+                                    <i class="fa fa-heart" aria-hidden="true"></i> 128
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img" src="./ressources/images/ny.jpg" alt="ny">
+                            <a href="#" class="btn btn-light btn-sm">Voyage</a>
+                            <div class="card-body">
+                                <h4 class="card-title-blog">Titre</h4>
+                                <small class="text-muted cat">
+                                    <i class="far fa-clock text-info"></i> ~ 2 minutes de lecture
+                                </small>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maxime consequuntur, voluptatem voluptas aliquam debitis.</p>
+                                <a href="#" class="btn btn-info">Lire</a>
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                                <div class="views">Oct 20, 12:45PM</div>
+                                <div class="stats">
+                                    <i class="far fa-eye"></i> 1347
+                                    <i class="far fa-comment"></i> 12
+                                    <i class="fa fa-heart" aria-hidden="true"></i> 128
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img" src="./ressources/images/ny.jpg" alt="ny">
+                            <a href="#" class="btn btn-light btn-sm">Voyage</a>
+                            <div class="card-body">
+                                <h4 class="card-title-blog">Titre</h4>
+                                <small class="text-muted cat">
+                                    <i class="far fa-clock text-info"></i> ~ 2 minutes de lecture
+                                </small>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maxime consequuntur, voluptatem voluptas aliquam debitis.</p>
+                                <a href="#" class="btn btn-info">Lire</a>
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                                <div class="views">Oct 20, 12:45PM</div>
+                                <div class="stats">
+                                    <i class="far fa-eye"></i> 1347
+                                    <i class="far fa-comment"></i> 12
+                                    <i class="fa fa-heart" aria-hidden="true"></i> 128
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img" src="./ressources/images/ny.jpg" alt="ny">
+                            <a href="#" class="btn btn-light btn-sm">Voyage</a>
+                            <div class="card-body">
+                                <h4 class="card-title-blog">Titre</h4>
+                                <small class="text-muted cat">
+                                    <i class="far fa-clock text-info"></i> 2 minutes de lecture
+                                </small>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maxime consequuntur, voluptatem voluptas aliquam debitis.</p>
+                                <a href="#" class="btn btn-info">Lire</a>
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                                <div class="views">Oct 20, 12:45PM</div>
+                                <div class="stats">
+                                    <i class="far fa-eye"></i> 1347
+                                    <i class="far fa-comment"></i> 12
+                                    <i class="fa fa-heart" aria-hidden="true"></i> 128
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    
+
+ <!-- =============== FOOTER ===============  -->
+ <footer>
+    <div class="copyright">
+        <p>Agence de voyage - 2020 <i class="fas fa-copyright"></i> <a href="#">Mentions légales</a></p>
+    </div>
+    <div class="social">
+        <i class="fab fa-facebook-square" id="fb"></i>
+        <!-- <i class="fab fa-instagram-square" id="insta"></i> -->
+        <i class="fab fa-twitter-square" id="twitter"></i>
+        <a href="https://github.com/benbd5/projet-1"><i class="fab fa-github-square" id="git"></i></a>
+    </div>
+</footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -1,3 +1,14 @@
+/* ========= SEARCH HEADER ========= */
+.form-inline span, select {
+    margin: 7px 0 7px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .btn-group-toggle {
+        display: none;
+    }
+}
+
 /* PRINCIPAL SEARCH */
 .search-advanced .container {
     border-radius: 10px;
@@ -92,6 +103,13 @@ input[type="checkbox"].test5:checked+label {
 
 
 /* ======== CARDS ======== */
-.pack-title {
-    overflow-wrap: break-word;
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .pack-title {
+        /* overflow-wrap: break-word; */
+        /* font-size: 70%; */
+    }
+
+    .pack-title h3 {
+        font-size: 1.4rem;
+    }
 }

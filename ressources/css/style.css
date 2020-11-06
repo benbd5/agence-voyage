@@ -83,8 +83,7 @@ h2:after {
 } */
 
 .see-more {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 10px 10px 0;
 }
 
 /* ============ HEADER ============ */
@@ -111,6 +110,19 @@ h2:after {
 header img {
     width: 30%;
 }
+
+@media screen and (max-width: 800px) {
+    header img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header img {
+        width: 60%;
+    }
+}
+
 
 .home-title {
     position: absolute;
@@ -321,6 +333,67 @@ cite img {
 
     .carousel-caption p {
         margin-bottom: 0;
+    }
+}
+
+
+/* ========= SECTION 2 CARDS BLOG ========= */
+.newsletter .card {
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+.card-img {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+  
+.card-title-blog {
+    margin-bottom: 0.3rem;
+}
+  
+.cat {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+  
+.fa-users {
+    margin-left: 1rem;
+}
+
+.fa-heart {
+    color: red;
+}
+  
+.stats i{
+    margin-left: 4px;
+}
+
+.card-body a .btn-info {
+    cursor: pointer;
+}
+
+.card-footer {
+    font-size: 0.8rem;
+}
+
+.btn-light {
+    position: absolute;
+    margin: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .card-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-footer i {
+        margin: 7px 0 0 0;
+    }
+
+    .card-footer i:nth-child(2), i:nth-child(3) {
+        margin: 7px 0 0 5px;
     }
 }
 

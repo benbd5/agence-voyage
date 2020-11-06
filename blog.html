@@ -17,7 +17,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
     <link rel="stylesheet" href="./ressources/css/style.css" />
     <link rel="stylesheet" href="./ressources/css/blog.css">
-    <title>Agence de voyage</title>
+    <title>Blog</title>
 </head>
 
 <body>
@@ -56,20 +56,36 @@
 
                 <!-- TODO : https://www.w3schools.com/howto/howto_js_list_grid_view.asp 
                 Pour afficher en grille ou en ligne avec plus de détails -->
-                <header class="border-bottom mb-4 pb-3">
+                <header class="border-bottom mb-4 pb-1">
                     <div class="form-inline">
                         <span class="mr-md-auto">4 articles </span>
 
-                        <!-- <div class="blog-filter">
-                            <input type="checkbox" id="filter-voyage">
-                            <label for="filter-voyage">Voyage</label>
-                        </div>
-                        <div class="blog-filter">
-                            <input type="checkbox" id="filter-voyage">
-                            <label for="filter-voyage">Voyage</label>
-                        </div> -->
+                        <!-- ======= PARTIE REPRISE DE LA PAGE RECHERCHE ======= -->
+                        <article class="filter-group">
+                            <div class="filter-content" id="collapse_10">
+                                <div class="card-body">
 
-                        <select class="mr-2 form-control">
+                                    <div class="btn">
+                                        <input type="checkbox" id="toggle10" checked autocomplete="off" checked class="test5">
+                                        <label for="toggle10" class="btn-checkbox">Voyage</label>
+                                    </div>
+
+                                    <div class="btn">
+                                        <input type="checkbox" id="toggle11" checked autocomplete="off" checked class="test5">
+                                        <label for="toggle11" class="btn-checkbox">Conseils</label>
+                                    </div>
+
+                                    <div class="btn">
+                                        <input type="checkbox" id="toggle12" checked autocomplete="off" checked class="test5">
+                                        <label for="toggle12" class="btn-checkbox">Culture</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <select class="col-9 col-sm-9 col-md-10 col-lg-4 mr-2 form-control">
                             <option>Nouveaux articles</option>
                             <option>Les plus lus</option>
                             <option>Date : croissante</option>
@@ -119,7 +135,7 @@
                     <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                         <div class="card">
                             <img class="card-img" src="./ressources/images/ny.jpg" alt="ny">
-                            <a href="#" class="btn btn-light btn-sm">Voyage</a>
+                            <a href="#" class="btn btn-light btn-sm">Conseil</a>
                             <div class="card-body">
                                 <h4 class="card-title-blog">Titre</h4>
                                 <small class="text-muted cat">
@@ -141,7 +157,7 @@
                     <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                         <div class="card">
                             <img class="card-img" src="./ressources/images/ny.jpg" alt="ny">
-                            <a href="#" class="btn btn-light btn-sm">Voyage</a>
+                            <a href="#" class="btn btn-light btn-sm">Culture</a>
                             <div class="card-body">
                                 <h4 class="card-title-blog">Titre</h4>
                                 <small class="text-muted cat">
